@@ -67,12 +67,12 @@ export default function Typewriter({
     <span className={`typewriter dir-${dir}`} dir={dir}>
       {dir === "rtl" ? (
         <>
+          <span className="typewriter-text">{display}</span>
           <span
             className={`typewriter-cursor ${
               phase === "pausing" ? "cursor-idle" : ""
             }`}
           />
-          <span className="typewriter-text">{display}</span>
         </>
       ) : (
         <>

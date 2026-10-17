@@ -152,7 +152,7 @@
   text-align: right;
 }
 .dir-rtl .typewriter-cursor {
-  margin-right: 4px;
+  margin-left: 4px;
   vertical-align: -0.15em;
 }
 
