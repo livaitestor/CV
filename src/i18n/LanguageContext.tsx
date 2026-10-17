@@ -49,6 +49,8 @@ export interface UiStrings {
   langName: string;
   aboutColon: string;
   dir: "rtl" | "ltr";
+  showMore: string;
+  showLess: string;
 }
 
 export interface SiteData {
