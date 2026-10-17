@@ -51,16 +51,33 @@ export default function Hero() {
           </div>
         </div>
       </div>
-      <div className="wave-bg">
+      <div className="tech-divider" aria-hidden="true">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
+          viewBox="0 0 1440 90"
           preserveAspectRatio="none"
         >
+          {/* hero-colored angular fill — sharp circuit edges instead of a wave */}
           <path
-            fillOpacity="10"
-            d="M0,256L21.8,250.7C43.6,245,87,235,131,192C174.5,149,218,75,262,80C305.5,85,349,171,393,186.7C436.4,203,480,149,524,149.3C567.3,149,611,203,655,197.3C698.2,192,742,128,785,90.7C829.1,53,873,43,916,69.3C960,96,1004,160,1047,176C1090.9,192,1135,160,1178,138.7C1221.8,117,1265,107,1309,112C1352.7,117,1396,139,1418,149.3L1440,160L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"
-          ></path>
+            className="td-fill"
+            d="M0,0 H1440 V20 L1300,20 L1260,55 L980,55 L950,30 L640,30 L600,65 L300,65 L270,40 L0,40 Z"
+          />
+          {/* circuit trace along the fill edge — flowing dashed data line */}
+          <path
+            id="td-trace"
+            className="td-trace"
+            d="M1440,20 L1300,20 L1260,55 L980,55 L950,30 L640,30 L600,65 L300,65 L270,40 L0,40"
+          />
+          {/* circuit nodes at trace junctions */}
+          <rect className="td-node" x="1256" y="51" width="8" height="8" />
+          <rect className="td-node" x="946" y="26" width="8" height="8" />
+          <rect className="td-node" x="596" y="61" width="8" height="8" />
+          {/* glowing pulse travelling along the trace */}
+          <circle className="td-pulse" r="4">
+            <animateMotion dur="5s" repeatCount="indefinite" rotate="auto">
+              <mpath href="#td-trace" />
+            </animateMotion>
+          </circle>
         </svg>
       </div>
     </header>

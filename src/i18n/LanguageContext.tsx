@@ -51,6 +51,7 @@ export interface UiStrings {
   dir: "rtl" | "ltr";
   showMore: string;
   showLess: string;
+  viewProject: string;
 }
 
 export interface SiteData {

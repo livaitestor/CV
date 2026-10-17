@@ -3,6 +3,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 export default function Portfolio() {
   const { data } = useLanguage();
   const portfolio = data.portfolio;
+  const ui = data.ui;
 
   return (
     <div className="section px-2 px-lg-4 pt-5" id="portfolio">
@@ -11,11 +12,11 @@ export default function Portfolio() {
           <h2 className="marker marker-center">{portfolio.title}</h2>
         </div>
         <div
-          className="custom-portfolio-grid"
+          className="custom-portfolio-grid tech-grid"
           data-aos="zoom-in-up"
           data-aos-delay="100"
         >
-          {portfolio.items.map((item) => (
+          {portfolio.items.map((item, i) => (
             <div
               key={item.title}
               className={`grid-item${item.tall ? " tall" : ""}`}
@@ -26,12 +27,21 @@ export default function Portfolio() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <figure className="portfolio-item">
+                <figure className="portfolio-item tech-card">
+                  <span className="tc-index" aria-hidden="true">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                   <img src={item.image} alt={item.title} loading="lazy" />
-                  <figcaption>
-                    <h4 className="h5 mb-0">{item.title}</h4>
-                    <div>{item.subtitle}</div>
+                  <figcaption className="tc-caption">
+                    <h4 className="h5 mb-1 tc-title">{item.title}</h4>
+                    <div className="tc-sub">
+                      <span className="tc-chip">{item.subtitle}</span>
+                      <span className="tc-visit">
+                        {ui.viewProject} ↗
+                      </span>
+                    </div>
                   </figcaption>
+                  <span className="tc-scan" aria-hidden="true" />
                 </figure>
               </a>
             </div>

@@ -6,12 +6,14 @@ export default function Footer() {
   const footer = data.footer;
 
   return (
-    <footer className="pt-4 pb-4 text-center">
+    <footer className="site-footer pt-4 pb-4 text-center">
       <div className="container">
         <div className="my-3">
-          <div className="h4">{footer.name}</div>
-          <p>{footer.subtitle}</p>
-          <div className="social-nav">
+          <div className="h4 footer-name">{footer.name}</div>
+          <p className="footer-subtitle" dir={data.ui.dir}>
+            {footer.subtitle}
+          </p>
+          <div className="social-nav footer-social">
             <SocialNav socials={footer.socials} justify="center" />
           </div>
         </div>
