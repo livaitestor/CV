@@ -5,11 +5,12 @@ import type { Skill } from "../types";
 const VISIBLE_COUNT = 5;
 
 function SkillRow({ skill, index }: { skill: Skill; index: number }) {
+  const { dir } = useLanguage();
   return (
     <div className="py-1">
-      <div className="d-flex text-small fw-bolder">
+      <div className="d-flex text-small fw-bolder" dir="ltr">
         <span className="me-auto">{skill.name}</span>
-        <span>{skill.level}</span>
+        <span dir={dir}>{skill.level}</span>
       </div>
       <div className="progress my-1">
         <div
