@@ -15,7 +15,7 @@ export default function Hero() {
               <img className="img-fluid" src={hero.image} alt={hero.imageAlt} />
             </div>
             <div className="col-lg-6 justify-content-end text-end">
-              <div className="mt-5">
+              <div className="mt-5 text-start">
                 <p className="lead text-uppercase mb-1">{hero.greeting}</p>
                 <h1
                   className="intro-title marker"
@@ -25,7 +25,7 @@ export default function Hero() {
                   {hero.title}
                 </h1>
                 <p
-                  className="lead fw-normal mt-3 text-start"
+                  className="lead fw-normal mt-3"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >

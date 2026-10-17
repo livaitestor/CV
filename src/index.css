@@ -137,21 +137,18 @@
   letter-spacing: -0.3px;
 }
 
-/* thick block cursor — sits right after the last typed char in BOTH dirs */
+/* thick block cursor — sits right after the last typed char in BOTH dirs.
+   baseline alignment keeps the cursor vertically centered with the text. */
 .typewriter-cursor {
   display: inline-block;
   width: 3px;
-  height: 1.15em;
-  vertical-align: text-bottom;
+  height: 1em;
+  vertical-align: -0.15em;
   background: var(--primary-color, #6c63ff);
   border-radius: 1px;
+  margin-inline-start: 4px;
   animation: cursor-pulse 0.9s ease-in-out infinite;
   box-shadow: 0 0 8px var(--primary-color, #6c63ff);
-}
-
-/* gap adapts to which side the cursor sits on */
-.typewriter-cursor {
-  margin-inline-start: 4px;
 }
 
 /* dimmed blinking when paused (feels more alive) */
