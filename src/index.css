@@ -1,27 +1,85 @@
-/* ============ Language toggle button ============ */
+/* ============ Skills expand / collapse ============ */
+.skills-collapse {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition: grid-template-rows 0.45s ease, opacity 0.35s ease;
+}
+
+.skills-collapse-inner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.skills-collapse.skills-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.skills-toggle {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6rem 2rem;
+  margin-top: 0.75rem;
+  border: 2px solid var(--primary-color, #6c63ff) !important;
+  border-radius: 25px !important;
+  background: transparent !important;
+  color: var(--primary-color, #6c63ff) !important;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease,
+    box-shadow 0.25s ease, transform 0.2s ease;
+}
+
+.skills-toggle:hover {
+  background: var(--primary-color, #6c63ff) !important;
+  color: #fff !important;
+  box-shadow: 0 4px 14px rgba(108, 99, 255, 0.35);
+}
+
+.skills-toggle:active {
+  transform: scale(0.96);
+}
+
+.skills-toggle-icon {
+  transition: transform 0.35s ease;
+}
+
+.skills-toggle.expanded .skills-toggle-icon {
+  transform: rotate(180deg);
+}
+
+/* ============ Language toggle button (matches .theme-toggle circle) ============ */
 .lang-toggle {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 46px;
+  width: 40px;
   height: 40px;
   margin: 0 8px;
-  padding: 0 10px;
-  border: 1px solid var(--border-color, #dee2e6);
-  border-radius: 20px;
-  background: transparent;
+  padding: 0;
+  border: 2px solid var(--border-color, #dee2e6);
+  border-radius: 50%;
+  background: var(--card-background, #fff);
   color: var(--text-color, #212529);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1.1);
 }
 
 .lang-toggle:hover {
-  background: var(--primary-color, #6c63ff);
+  transform: scale(1.08);
   border-color: var(--primary-color, #6c63ff);
-  color: #fff;
-  transform: scale(1.05);
+  color: var(--primary-color, #6c63ff);
+  box-shadow: 0 4px 12px rgba(81, 43, 212, 0.25);
+}
+
+.lang-toggle:active {
+  transform: scale(0.94);
 }
 
 /* ============ Direction-aware text ============ */
