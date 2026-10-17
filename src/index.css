@@ -1,4 +1,14 @@
-/* ============ Skills expand / collapse ============ */
+/* ============ Skills section ============ */
+.dir-rtl .skills-card .row {
+  justify-content: flex-end;
+}
+
+.dir-rtl .skills-card .offset-md-2 {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+/* collapse animation */
 .skills-collapse {
   display: grid;
   grid-template-rows: 0fr;
