@@ -120,10 +120,8 @@
 
 /* ============ Typewriter (RTL + LTR aware) ============ */
 .typewriter {
-  position: relative;
-  display: inline-flex;
-  align-items: baseline;
-  /* direction comes from dir={dir} attribute — do NOT hardcode */
+  display: inline;
+  /* direction comes from dir={dir} attribute — cursor follows the typing edge */
 }
 
 /* keep the readable body color — no gradient on the text itself */
@@ -132,16 +130,16 @@
   letter-spacing: -0.3px;
 }
 
-/* thick block cursor — like a terminal; margin auto-adapts to direction */
+/* thick block cursor — sits right after the last typed char (both dirs) */
 .typewriter-cursor {
   display: inline-block;
   width: 3px;
   height: 1.15em;
-  margin-inline-start: 6px;
+  margin-inline-start: 4px;
+  vertical-align: text-bottom;
   background: var(--primary-color, #6c63ff);
   border-radius: 1px;
   animation: cursor-pulse 0.9s ease-in-out infinite;
-  transform: translateY(2px);
   box-shadow: 0 0 8px var(--primary-color, #6c63ff);
 }
 
