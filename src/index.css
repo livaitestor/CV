@@ -126,6 +126,12 @@
      so the line is anchored at its start edge and grows toward the end edge. */
 }
 
+/* reserve enough room for the longest subtitle so the layout never jumps
+   and the text never overflows its column — wraps onto a 2nd line instead */
+.lead.fw-normal:has(.typewriter) {
+  min-height: 2.8em;
+}
+
 .typewriter-text {
   font-weight: 700;
   letter-spacing: -0.3px;
