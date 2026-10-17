@@ -118,11 +118,10 @@
   height: 48px;
 }
 
-/* ============ Typewriter (cursor follows typing edge via unicode-bidi) ============ */
+/* ============ Typewriter (DOM order swaps by dir — cursor at typing edge) ============ */
 .typewriter {
   display: inline;
-  /* dir={dir} on the span; unicode-bidi keeps the cursor glued to the typing edge */
-  unicode-bidi: isolate;
+  /* dir={dir} on the span */
 }
 
 .typewriter-text {
@@ -142,8 +141,12 @@
   box-shadow: 0 0 8px var(--primary-color, #6c63ff);
 }
 
-/* tiny gap between text and cursor — works in both directions */
-.typewriter-text + .typewriter-cursor {
+/* gap adapts to which side the cursor sits on */
+.dir-rtl .typewriter-cursor {
+  margin-inline-end: 4px;
+}
+
+.dir-ltr .typewriter-cursor {
   margin-inline-start: 4px;
 }
 
