@@ -68,6 +68,12 @@
   gap: 4px;
 }
 
+/* In LTR mode, push the button group to the right side of the navbar */
+.dir-ltr .nav-actions {
+  order: 10;
+  margin-left: auto;
+}
+
 /* ============ Language toggle button (matches .theme-toggle circle) ============ */
 .lang-toggle {
   display: inline-flex;
