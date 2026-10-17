@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { useLanguage } from "../i18n/LanguageContext";
+import { asset } from "../utils/asset";
 
 export default function About() {
   const { data } = useLanguage();
@@ -16,7 +17,7 @@ export default function About() {
           >
             <img
               className="avatar img-fluid mt-2"
-              src={about.avatar}
+              src={asset(about.avatar)}
               width="400"
               height="400"
               loading="lazy"

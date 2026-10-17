@@ -1,4 +1,5 @@
 import { useLanguage } from "../i18n/LanguageContext";
+import { asset } from "../utils/asset";
 
 export default function Portfolio() {
   const { data } = useLanguage();
@@ -31,7 +32,7 @@ export default function Portfolio() {
                   <span className="tc-index" aria-hidden="true">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <img src={item.image} alt={item.title} loading="lazy" />
+                  <img src={asset(item.image)} alt={item.title} loading="lazy" />
                   <figcaption className="tc-caption">
                     <h4 className="h5 mb-1 tc-title">{item.title}</h4>
                     <div className="tc-sub">

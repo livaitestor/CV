@@ -1,6 +1,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import SocialNav from "./SocialNav";
 import Typewriter from "./Typewriter";
+import { asset } from "../utils/asset";
 
 export default function Hero() {
   const { data, dir } = useLanguage();
@@ -12,7 +13,7 @@ export default function Hero() {
         <div className="container px-3">
           <div className="row">
             <div className="col-lg-6 p-2">
-              <img className="img-fluid" src={hero.image} alt={hero.imageAlt} />
+              <img className="img-fluid" src={asset(hero.image)} alt={hero.imageAlt} />
             </div>
             <div className="col-lg-6 justify-content-end text-end">
               <div className="mt-5 text-start">

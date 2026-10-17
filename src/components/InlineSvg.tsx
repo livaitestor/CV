@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { asset } from "../utils/asset";
 
 /**
  * Renders an inline <svg> fetched from a file path.
@@ -19,7 +20,7 @@ export default function InlineSvg({
   const [svgContent, setSvgContent] = useState<string>("");
 
   useEffect(() => {
-    fetch(src)
+    fetch(asset(src))
       .then((r) => r.text())
       .then((text) => {
         // Inject className into the svg tag if provided
