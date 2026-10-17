@@ -1,0 +1,34 @@
+{
+  "title": "مهارت ها",
+  "description": "مهارت‌های فنی من",
+  "columns": [
+    [
+      { "name": "PostgreSql", "level": "متوسط", "percent": 60 },
+      { "name": "C#", "level": "پیشرفته", "percent": 80 },
+      { "name": "EDA (Event-Driven Architecture)", "level": "مقدماتی", "percent": 40 },
+      { "name": "Entity Freamwork Core", "level": "پیشرفته", "percent": 80 },
+      { "name": "Linux", "level": "مقدماتی", "percent": 40 },
+      { "name": "Grafana – Dashboards and data visualization", "level": "پیشرفته", "percent": 80 },
+      { "name": "Git & Github", "level": "پیشرفته", "percent": 80 },
+      { "name": "CI/CD", "level": "مقدماتی", "percent": 40 },
+      { "name": "Jaeger – Distributed tracing", "level": "متوسط", "percent": 60 },
+      { "name": "RabbitMq", "level": "مقدماتی", "percent": 40 },
+      { "name": "CQRS", "level": "متوسط", "percent": 60 },
+      { "name": "SignalR", "level": "متوسط", "percent": 60 }
+    ],
+    [
+      { "name": "SQL Server", "level": "متوسط", "percent": 60 },
+      { "name": "Asp .Net Core", "level": "پیشرفته", "percent": 80 },
+      { "name": "Redis", "level": "مقدماتی", "percent": 40 },
+      { "name": "Clean architecture", "level": "متوسط", "percent": 60 },
+      { "name": "Loki – Log aggregation and querying", "level": "متوسط", "percent": 60 },
+      { "name": "OpenTelemetry – Telemetry collection", "level": "متوسط", "percent": 60 },
+      { "name": "Prometheus – Metrics collection and alerting", "level": "متوسط", "percent": 60 },
+      { "name": "Web Security / OWASP Top 10", "level": "متوسط", "percent": 60 },
+      { "name": "HTML/CSS", "level": "پیشرفته", "percent": 80 },
+      { "name": "Unit Testing: xUnit", "level": "متوسط", "percent": 60 },
+      { "name": "Docker", "level": "مقدماتی", "percent": 40 },
+      { "name": "JavaScript", "level": "متوسط", "percent": 60 }
+    ]
+  ]
+}

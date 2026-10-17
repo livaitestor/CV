@@ -1,0 +1,40 @@
+{
+  "title": "نمونه کار ها",
+  "items": [
+    {
+      "title": "پیام رسان",
+      "subtitle": "Github.com",
+      "href": "https://nimahaji.github.io/PinooChat-UI/#/chat",
+      "image": "/website_files/86b7d6df-a288-48a6-80bf-fbd4a7ff3879.png",
+      "tall": true
+    },
+    {
+      "title": "وب سایت پت شاپ",
+      "subtitle": "Github.com",
+      "href": "https://github.com/NimaHaji",
+      "image": "/website_files/cc29c73f-dad7-426f-abde-96d4d6ca394e.png",
+      "tall": false
+    },
+    {
+      "title": "سیستم رزرو دهی API",
+      "subtitle": "Github.com",
+      "href": "https://github.com/NimaHaji/ReservationSystemAPI",
+      "image": "/website_files/6985861d-61fa-41e4-baa4-889212d5bd3a.png",
+      "tall": false
+    },
+    {
+      "title": "وب سایت فروشگاهی",
+      "subtitle": "Github.com",
+      "href": "https://github.com/NimaHaji/ShopAPI",
+      "image": "/website_files/b8f673ec-f18e-4a4b-9f07-9725004ec177.png",
+      "tall": false
+    },
+    {
+      "title": "وب سایت بلاگ",
+      "subtitle": "Github.com",
+      "href": "https://github.com/NimaHaji/DevCard",
+      "image": "/website_files/c72220f3-334f-4e59-ac44-11dd55c2783b.png",
+      "tall": false
+    }
+  ]
+}

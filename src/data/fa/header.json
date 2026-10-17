@@ -1,0 +1,10 @@
+{
+  "navItems": [
+    { "label": "درباره", "href": "#about" },
+    { "label": "خدمات", "href": "#services" },
+    { "label": "مهارت ها", "href": "#skills" },
+    { "label": "نمونه کار", "href": "#portfolio" },
+    { "label": "تجربات", "href": "#experience" },
+    { "label": "تماس با ما", "href": "#contact" }
+  ]
+}

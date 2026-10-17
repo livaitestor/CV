@@ -1,0 +1,10 @@
+{
+  "title": "خدمات",
+  "description": "خدمات تخصصی توسعهٔ بک‌اند",
+  "items": [
+    { "title": "توسعه وب", "icon": "/images/services/service1.svg", "delay": 100 },
+    { "title": "احراز هویت و امنیت (JWT/OAuth)", "icon": "/images/services/service2.svg", "delay": 200 },
+    { "title": "طراحی و توسعه REST API", "icon": "/images/services/service3.svg", "delay": 300 },
+    { "title": "طراحی و توسعهٔ Web API", "icon": "/images/services/service4.svg", "delay": 400 }
+  ]
+}

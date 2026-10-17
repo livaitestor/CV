@@ -1,0 +1,34 @@
+{
+  "title": "Skills",
+  "description": "My technical skills",
+  "columns": [
+    [
+      { "name": "PostgreSql", "level": "Intermediate", "percent": 60 },
+      { "name": "C#", "level": "Advanced", "percent": 80 },
+      { "name": "EDA (Event-Driven Architecture)", "level": "Beginner", "percent": 40 },
+      { "name": "Entity Framework Core", "level": "Advanced", "percent": 80 },
+      { "name": "Linux", "level": "Beginner", "percent": 40 },
+      { "name": "Grafana – Dashboards and data visualization", "level": "Advanced", "percent": 80 },
+      { "name": "Git & Github", "level": "Advanced", "percent": 80 },
+      { "name": "CI/CD", "level": "Beginner", "percent": 40 },
+      { "name": "Jaeger – Distributed tracing", "level": "Intermediate", "percent": 60 },
+      { "name": "RabbitMq", "level": "Beginner", "percent": 40 },
+      { "name": "CQRS", "level": "Intermediate", "percent": 60 },
+      { "name": "SignalR", "level": "Intermediate", "percent": 60 }
+    ],
+    [
+      { "name": "SQL Server", "level": "Intermediate", "percent": 60 },
+      { "name": "Asp .Net Core", "level": "Advanced", "percent": 80 },
+      { "name": "Redis", "level": "Beginner", "percent": 40 },
+      { "name": "Clean architecture", "level": "Intermediate", "percent": 60 },
+      { "name": "Loki – Log aggregation and querying", "level": "Intermediate", "percent": 60 },
+      { "name": "OpenTelemetry – Telemetry collection", "level": "Intermediate", "percent": 60 },
+      { "name": "Prometheus – Metrics collection and alerting", "level": "Intermediate", "percent": 60 },
+      { "name": "Web Security / OWASP Top 10", "level": "Intermediate", "percent": 60 },
+      { "name": "HTML/CSS", "level": "Advanced", "percent": 80 },
+      { "name": "Unit Testing: xUnit", "level": "Intermediate", "percent": 60 },
+      { "name": "Docker", "level": "Beginner", "percent": 40 },
+      { "name": "JavaScript", "level": "Intermediate", "percent": 60 }
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "image": "/website_files/8e1b675d-0373-4cda-82c2-87063a3871a6.webp",
+  "imageAlt": "hello",
+  "greeting": "! سلام",
+  "title": "نیما حاجی مزدارانی هستم",
+  "subtitles": [
+    "مهندس کامپیوتر",
+    "علاقه مند به برنامه نویسی",
+    "برنامه نویس بک اند"
+  ],
+  "ctaText": "در تماس باشید",
+  "ctaHref": "#contact",
+  "socials": [
+    { "name": "Github", "title": "github", "href": "https://github.com/NimaHaji", "icon": "fab fa-github-alt" },
+    { "name": "instagram", "title": "instagram", "href": "https://instagram.com/nimahaji._", "icon": "fab fa-instagram" },
+    { "name": "linkedin", "title": "linkedin", "href": "https://www.linkedin.com/in/nima-haji-mazdarani/", "icon": "fab fa-linkedin" },
+    { "name": "telegram", "title": "telegram", "href": "https://t.me/", "icon": "fab fa-telegram-plane" }
+  ]
+}

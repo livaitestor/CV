@@ -1,0 +1,12 @@
+{
+  "avatar": "/website_files/c400e848-c744-45aa-b60b-58e3347a5234.jpg",
+  "title": "Hi, I'm Nima Haji Mazdarani",
+  "subtitle": "Junior .NET Developer (Back-End)",
+  "items": [
+    { "label": "Age", "value": "21" },
+    { "label": "Email", "value": "nimahajimazdarani@gmail.com" },
+    { "label": "Phone", "value": "09926265125" },
+    { "label": "Address", "value": "Qaemshahr, Mazandaran" },
+    { "label": "Status", "value": "Open to work" }
+  ]
+}

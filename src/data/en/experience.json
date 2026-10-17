@@ -1,0 +1,19 @@
+{
+  "title": "Experience",
+  "items": [
+    {
+      "title": "Back-End Developer",
+      "subtitle": "Personal Website",
+      "description": "Hands-on experience building websites — my personal site is a prime example. The front-end was professionally designed while every part of the back-end, including server communication, database management, user login, data storage and retrieval, and all back-end logic, was coded carefully and methodically. The site has been deployed and tested in production.",
+      "image": "/website_files/e21d7447-1426-4204-b337-594fff96e734.svg",
+      "imageAlt": "ui-ux"
+    },
+    {
+      "title": "Web Api",
+      "subtitle": "Reservation System",
+      "description": "An authentication-driven Web API for a resource reservation system, built on RESTful architecture. After registering and receiving a JWT token, users can log in and perform operations such as reserving, cancelling reservations, and viewing resource status. All endpoints follow REST principles (meaningful HTTP methods, standard response statuses, and well-structured URLs), and communication security is protected through token validation on every request.",
+      "image": "/website_files/0bd60702-0366-43ad-af4e-51f677eab607.svg",
+      "imageAlt": "ui-ux"
+    }
+  ]
+}

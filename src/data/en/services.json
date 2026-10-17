@@ -1,0 +1,10 @@
+{
+  "title": "Services",
+  "description": "Specialized back-end development services",
+  "items": [
+    { "title": "Web Development", "icon": "/images/services/service1.svg", "delay": 100 },
+    { "title": "Authentication & Security (JWT/OAuth)", "icon": "/images/services/service2.svg", "delay": 200 },
+    { "title": "REST API Design & Development", "icon": "/images/services/service3.svg", "delay": 300 },
+    { "title": "Web API Design & Development", "icon": "/images/services/service4.svg", "delay": 400 }
+  ]
+}
