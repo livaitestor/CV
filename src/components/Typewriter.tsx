@@ -63,14 +63,27 @@ export default function Typewriter({
     return () => clearTimeout(timeout);
   }, [display, phase, index, texts, typingSpeed, deletingSpeed, pauseTime]);
 
+  const cursor = (
+    <span
+      className={`typewriter-cursor ${
+        phase === "pausing" ? "cursor-idle" : ""
+      }`}
+    />
+  );
+
   return (
     <span className="typewriter" dir={dir}>
-      <span className="typewriter-text">{display}</span>
-      <span
-        className={`typewriter-cursor ${
-          phase === "pausing" ? "cursor-idle" : ""
-        }`}
-      />
+      {dir === "rtl" ? (
+        <>
+          {cursor}
+          <span className="typewriter-text">{display}</span>
+        </>
+      ) : (
+        <>
+          <span className="typewriter-text">{display}</span>
+          {cursor}
+        </>
+      )}
     </span>
   );
 }
