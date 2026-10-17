@@ -118,13 +118,12 @@
   height: 48px;
 }
 
-/* ============ Persian Typewriter ============ */
+/* ============ Typewriter (RTL + LTR aware) ============ */
 .typewriter {
   position: relative;
   display: inline-flex;
   align-items: baseline;
-  /* cursor sits at the LEFT edge of the text in RTL */
-  direction: rtl;
+  /* direction comes from dir={dir} attribute — do NOT hardcode */
 }
 
 /* keep the readable body color — no gradient on the text itself */
@@ -133,12 +132,12 @@
   letter-spacing: -0.3px;
 }
 
-/* thick block cursor — like a terminal, placed at the left (start) of the line */
+/* thick block cursor — like a terminal; margin auto-adapts to direction */
 .typewriter-cursor {
   display: inline-block;
   width: 3px;
   height: 1.15em;
-  margin-right: 6px;
+  margin-inline-start: 6px;
   background: var(--primary-color, #6c63ff);
   border-radius: 1px;
   animation: cursor-pulse 0.9s ease-in-out infinite;
