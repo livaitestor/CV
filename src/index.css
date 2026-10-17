@@ -61,6 +61,13 @@
   transform: rotate(180deg);
 }
 
+/* ============ Nav action buttons group (fixed position, never moves on lang switch) ============ */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 /* ============ Language toggle button (matches .theme-toggle circle) ============ */
 .lang-toggle {
   display: inline-flex;
