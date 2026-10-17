@@ -65,13 +65,21 @@
 .nav-actions {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 8px;
 }
 
 /* In LTR mode, push the button group to the right side of the navbar */
 .dir-ltr .nav-actions {
   order: 10;
   margin-left: auto;
+}
+
+/* Keep language toggle always at the end of the group (rightmost / outermost) */
+.nav-actions .lang-toggle {
+  order: 1;
+}
+.nav-actions .theme-toggle {
+  order: 0;
 }
 
 /* ============ Language toggle button (matches .theme-toggle circle) ============ */
@@ -81,7 +89,7 @@
   justify-content: center;
   width: 40px;
   height: 40px;
-  margin: 0 8px;
+  margin: 0;
   padding: 0;
   border: 2px solid var(--border-color, #dee2e6);
   border-radius: 50%;
