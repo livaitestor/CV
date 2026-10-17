@@ -118,37 +118,41 @@
   height: 48px;
 }
 
-/* ============ Typewriter — cursor rides the typing edge in BOTH dirs ============ */
+/* ============ Typewriter — per-direction rules so they never clash ============ */
+
+/* shared base — cursor appearance is identical in both directions */
 .typewriter {
   display: inline;
-  /* dir={dir} on the span; bidi puts the trailing cursor at the typing edge:
-     LTR → right of last char, RTL → left of last char. Parent uses text-start
-     so the line is anchored at its start edge and grows toward the end edge. */
 }
-
-/* reserve enough room for the longest subtitle so the layout never jumps
-   and the text never overflows its column — wraps onto a 2nd line instead */
-.lead.fw-normal:has(.typewriter) {
-  min-height: 2.8em;
-}
-
 .typewriter-text {
   font-weight: 700;
   letter-spacing: -0.3px;
 }
-
-/* thick block cursor — sits right after the last typed char in BOTH dirs.
-   baseline alignment keeps the cursor vertically centered with the text. */
 .typewriter-cursor {
   display: inline-block;
   width: 3px;
   height: 1em;
-  vertical-align: -0.15em;
   background: var(--primary-color, #6c63ff);
   border-radius: 1px;
-  margin-inline-start: 4px;
   animation: cursor-pulse 0.9s ease-in-out infinite;
   box-shadow: 0 0 8px var(--primary-color, #6c63ff);
+}
+
+/* ── English: text grows left → right, cursor rides the RIGHT edge ── */
+.dir-ltr .typewriter-cursor {
+  margin-left: 4px;
+  vertical-align: -0.15em;
+}
+
+/* ── Farsi: text grows right → left, cursor rides the LEFT edge ── */
+.dir-rtl .typewriter-cursor {
+  margin-right: 4px;
+  vertical-align: -0.15em;
+}
+
+/* reserve room for the longest subtitle so the layout never jumps */
+.lead.fw-normal:has(.typewriter) {
+  min-height: 2.8em;
 }
 
 /* dimmed blinking when paused (feels more alive) */

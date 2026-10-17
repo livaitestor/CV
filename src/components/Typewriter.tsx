@@ -64,7 +64,7 @@ export default function Typewriter({
   }, [display, phase, index, texts, typingSpeed, deletingSpeed, pauseTime]);
 
   return (
-    <span className="typewriter" dir={dir}>
+    <span className={`typewriter dir-${dir}`} dir={dir}>
       <span className="typewriter-text">{display}</span>
       <span
         className={`typewriter-cursor ${
