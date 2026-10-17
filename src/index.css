@@ -61,25 +61,18 @@
   transform: rotate(180deg);
 }
 
-/* ============ Nav action buttons group (fixed position, never moves on lang switch) ============ */
+/* ============ Nav action buttons group (always rightmost, never reorders) ============ */
 .nav-actions {
   display: flex;
   align-items: center;
   gap: 8px;
+  direction: ltr;          /* keep visual order fixed regardless of page dir */
 }
 
-/* In LTR mode, push the button group to the right side of the navbar */
+/* Push the button group to the right side of the navbar */
 .dir-ltr .nav-actions {
   order: 10;
   margin-left: auto;
-}
-
-/* Keep language toggle always at the end of the group (rightmost / outermost) */
-.nav-actions .lang-toggle {
-  order: 1;
-}
-.nav-actions .theme-toggle {
-  order: 0;
 }
 
 /* ============ Language toggle button (matches .theme-toggle circle) ============ */
