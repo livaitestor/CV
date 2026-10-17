@@ -118,19 +118,19 @@
   height: 48px;
 }
 
-/* ============ Typewriter (RTL + LTR aware) ============ */
+/* ============ Typewriter (cursor follows typing edge via unicode-bidi) ============ */
 .typewriter {
   display: inline;
-  /* direction comes from dir={dir} attribute — cursor follows the typing edge */
+  /* dir={dir} on the span; unicode-bidi keeps the cursor glued to the typing edge */
+  unicode-bidi: isolate;
 }
 
-/* keep the readable body color — no gradient on the text itself */
 .typewriter-text {
   font-weight: 700;
   letter-spacing: -0.3px;
 }
 
-/* thick block cursor — sits at the typing edge; margin adapts via DOM order */
+/* thick block cursor — sits right after the last typed char in BOTH dirs */
 .typewriter-cursor {
   display: inline-block;
   width: 3px;
@@ -142,14 +142,9 @@
   box-shadow: 0 0 8px var(--primary-color, #6c63ff);
 }
 
-/* RTL: cursor is placed BEFORE text in DOM → give it trailing space on its right */
-.dir-rtl .typewriter-cursor {
-  margin-inline-end: 5px;
-}
-
-/* LTR: cursor is placed AFTER text in DOM → space between text and cursor */
-.dir-ltr .typewriter-cursor {
-  margin-inline-start: 5px;
+/* tiny gap between text and cursor — works in both directions */
+.typewriter-text + .typewriter-cursor {
+  margin-inline-start: 4px;
 }
 
 /* dimmed blinking when paused (feels more alive) */
