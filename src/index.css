@@ -156,6 +156,12 @@
   vertical-align: -0.15em;
 }
 
+/* ── Farsi: hero text block anchors right — greeting + title + subtitle all right-aligned ── */
+/* .mt-5 has .text-start (LTR-friendly). In RTL this override puts everything back on the right. */
+.dir-rtl .hero-header .mt-5 {
+  text-align: right !important;
+}
+
 /* reserve room for the longest subtitle so the layout never jumps */
 .lead.fw-normal:has(.typewriter) {
   min-height: 2.8em;
