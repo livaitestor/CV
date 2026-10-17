@@ -25,7 +25,7 @@ export default function Hero() {
                   {hero.title}
                 </h1>
                 <p
-                  className="lead fw-normal mt-3"
+                  className="lead fw-normal mt-3 text-start"
                   data-aos="fade-up"
                   data-aos-delay="100"
                 >

@@ -118,10 +118,12 @@
   height: 48px;
 }
 
-/* ============ Typewriter (DOM order swaps by dir — cursor at typing edge) ============ */
+/* ============ Typewriter — cursor rides the typing edge in BOTH dirs ============ */
 .typewriter {
   display: inline;
-  /* dir={dir} on the span */
+  /* dir={dir} on the span; bidi puts the trailing cursor at the typing edge:
+     LTR → right of last char, RTL → left of last char. Parent uses text-start
+     so the line is anchored at its start edge and grows toward the end edge. */
 }
 
 .typewriter-text {
@@ -142,11 +144,7 @@
 }
 
 /* gap adapts to which side the cursor sits on */
-.dir-rtl .typewriter-cursor {
-  margin-inline-end: 4px;
-}
-
-.dir-ltr .typewriter-cursor {
+.typewriter-cursor {
   margin-inline-start: 4px;
 }
 
