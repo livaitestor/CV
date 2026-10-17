@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 100 100">
+  <defs>
+    <!-- ماسکی که قسمت وسط را خالی می‌کند -->
+    <mask id="hole">
+      <!-- همه‌چیز سفید باشد (پر شود) -->
+      <rect width="100" height="100" fill="white"/>
+      <!-- جای کلید مشکی = قسمت خالی -->
+      <circle cx="50" cy="58" r="7" fill="black"/>
+      <rect x="46" y="58" width="8" height="15" rx="2" fill="black"/>
+    </mask>
+  </defs>
+
+  <!-- قفل بنفش یکدست بدون هیچ بوردی -->
+  <g mask="url(#hole)" fill="#a855f7">
+    <!-- دستگیره (نیم‌دایره بالایی) -->
+    <path d="M 28 45 C 28 20, 72 20, 72 45 L 64 45 C 64 28, 36 28, 36 45 Z"/>
+    <!-- بدنه قفل -->
+    <rect x="30" y="45" width="40" height="38" rx="5"/>
+  </g>
+</svg>
