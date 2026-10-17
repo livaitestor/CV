@@ -145,6 +145,7 @@
 }
 
 /* ── Farsi: text grows right → left, cursor rides the LEFT edge ── */
+/* cursor comes BEFORE text in DOM, so in RTL visual order it sits on the left */
 .dir-rtl .typewriter-cursor {
   margin-right: 4px;
   vertical-align: -0.15em;
